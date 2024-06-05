@@ -24,7 +24,7 @@ const Hero = async () => {
         <div className='flex items-center justify-center md:justify-end'>
           <Image
             priority
-            src='/images/hero.jpg'
+            src='/images/fondnice.png'
             className='rounded-full'
             alt='Hero image'
             width={500}
