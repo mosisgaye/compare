@@ -12,7 +12,7 @@ const searchProducts = async (query: string): Promise<SearchProducts[]> => {
       id: true,
       name: true,
       slug: true,
-      image: true,
+      images: true,
       categoryId: true,
     },
     take: 10,
