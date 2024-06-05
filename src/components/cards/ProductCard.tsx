@@ -8,9 +8,10 @@ import Image from 'next/image';
 interface ProductCardProps {
   product: Product & {
     Category: Category;
-    images: String
+    images: any;
   };
 }
+
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
