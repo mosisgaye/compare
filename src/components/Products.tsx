@@ -2,11 +2,9 @@
 import { ArrowRight, ArrowRightIcon, MoveRight } from 'lucide-react'
 import Link from 'next/link'
 import { Suspense } from 'react'
-
 import PopularProducts from '@/components/PopularProducts'
 import PopularProductsSkeleton from '@/components/skeletons/PopularProductsSkeleton'
-import { buttonVariants } from '@/components/ui/Button'
-import { cn } from '@/lib/utils'
+
 
 const Products = async () => {
   return (
