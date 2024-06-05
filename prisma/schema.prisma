@@ -8,6 +8,7 @@ generator client {
 datasource db {
   provider = "postgresql"
   url = env("DATABASE_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
 model VerificationToken {
@@ -30,9 +31,11 @@ model Product {
   slug        String
   description String?     @db.Text
   price       Decimal
-  images      Json
+  images      String
   categoryId  String
   Category    Category    @relation(fields: [categoryId], references: [slug])
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
 
   @@index([categoryId, name, slug])
 }

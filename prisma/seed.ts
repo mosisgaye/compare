@@ -2,34 +2,37 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function main() {
-  const bouygues = await prisma.category.create({
+  const lebara = await prisma.category.create({
     data: {
-      name: 'Bouygues',
-      slug: 'bouygues',
-    },
-  })
-  const orange = await prisma.category.create({
-    data: {
-      name: 'Orange',
-      slug: 'orange',
-    },
-  })
-  const free = await prisma.category.create({
-    data: {
-      name: 'Free',
-      slug: 'free',
+      name: 'Lebara',
+      slug: 'lebara',
     },
   })
 
-  const sfr = await prisma.category.create({
+  const poste = await prisma.category.create({
     data: {
-      name: 'Sfr',
-      slug: 'sfr',
+      name: 'La poste Mobile',
+      slug: 'poste',
     },
   })
 
-  console.log({ bouygues, orange, free, sfr })
+  const sosh = await prisma.category.create({
+    data: {
+      name: 'Sosh',
+      slug: 'sosh',
+    },
+  })
+
+  const you = await prisma.category.create({
+    data: {
+      name: 'You',
+      slug: 'you',
+    },
+  })
+
+  console.log({ lebara, poste, sosh, you })
 }
+
 main()
   .then(async () => {
     await prisma.$disconnect()
