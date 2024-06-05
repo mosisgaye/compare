@@ -1,59 +1,63 @@
-import prisma from '@/lib/db';
-import { z } from 'zod';
+import prisma from '@/lib/db'
+import { z } from 'zod'
 
 export async function GET(req: Request) {
   try {
-    const url = new URL(req.url);
+    const url = new URL(req.url)
 
     const { limit, page, category } = z
       .object({
         limit: z.string(),
         page: z.string(),
-        category: z.string().nullable(),
+        category: z.string(),
       })
       .parse({
         limit: url.searchParams.get('limit'),
         page: url.searchParams.get('page'),
         category: url.searchParams.get('category'),
-      });
+      })
 
-    let result;
+    let result
 
-    if (category !== null) {
+    if (category != 'null') {
       const products = await prisma.product.findMany({
         where: {
           categoryId: category,
         },
         take: parseInt(limit),
-        skip: (parseInt(page) - 1) * parseInt(limit), // On ajuste pour ne pas inclure le skip
+        skip: (parseInt(page) - 1) * parseInt(limit),
         orderBy: {
-          // On n'inclut pas l'orderBy car 'createdAt' n'existe plus dans le type ProductOrderByWithRelationInput
+          createdAt: 'desc',
         },
         include: {
           Category: true,
         },
-      });
+      })
 
-      result = products;
+      result = products
     } else {
       const products = await prisma.product.findMany({
         take: parseInt(limit),
-        skip: (parseInt(page) - 1) * parseInt(limit), // On ajuste pour ne pas inclure le skip
+        skip: (parseInt(page) - 1) * parseInt(limit),
         orderBy: {
-          // On n'inclut pas l'orderBy car 'createdAt' n'existe plus dans le type ProductOrderByWithRelationInput
+          createdAt: 'desc',
         },
         include: {
           Category: true,
         },
-      });
+      })
 
-      result = products;
+      result = products
+    }
+    
+    return Response.json(result)
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return new Response('Invalid request data passed', { status: 422 })
     }
 
-    return Response.json(result);
-  } catch (error) {
-    console.error(error);
+    console.log(error)
 
-    return new Response('Could not fetch more posts', { status: 500 });
+    return new Response('Could not fetch more posts', { status: 500 })
   }
 }
