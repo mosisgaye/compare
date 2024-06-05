@@ -5,6 +5,10 @@ import { categories } from '@/config'
 import prisma from '@/lib/db'
 import { SearchProducts } from '@/types/search-products'
 
+
+
+
+
 const searchProducts = async (query: string): Promise<SearchProducts[]> => {
   const filteredProducts = await prisma.product.findMany({
     where: {
