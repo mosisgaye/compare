@@ -1,24 +1,14 @@
 'use client'
 
 import { Category, Product } from '@prisma/client';
-import { Decimal } from '@prisma/client/runtime/library';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 
 
-
 interface ProductCardProps {
-  product: {
-    id: string;
-    name: string;
-    slug: string;
-    description: string | null;
-    price: Decimal;
-        images: String;
-
-    categoryId: string;
-    createdAt: Date;
-    updatedAt: Date;
+  product: Product & {
+    Category: Category;
+    images: String
   };
 }
 
