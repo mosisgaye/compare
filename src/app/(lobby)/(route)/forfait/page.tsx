@@ -4,6 +4,8 @@ import ProductsList from '@/components/ProductsList'
 import { INFINITE_SCROLL_LIMIT, categories } from '@/config'
 import prisma from '@/lib/db'
 
+
+
 const Products = async ({
   searchParams,
 }: {
@@ -53,11 +55,25 @@ const Products = async ({
 
   return (
     <div className='flex flex-col py-6 sm:py-10 px-4 sm:px-6 lg:px-8'>
-    
-      <Filter categories={categories} className='mt-8 sm:mt-10 mb-4 sm:mb-6' />
+      <div className="mt-8 sm:mt-10 mb-4 sm:mb-6"></div>
+      <div className="flex justify-center mb-4 sm:mb-6">
+        <Filter categories={categories} className='mt-8 sm:mt-10' />
+        <div className="w-2" />
+        <Filter categories={categories} className='mt-8 sm:mt-10' />
+      </div>
       <ProductsList initialProducts={products} totalData={totalProducts} />
     </div>
   )
 }
 
 export default Products
+
+
+
+
+
+
+
+
+
+
