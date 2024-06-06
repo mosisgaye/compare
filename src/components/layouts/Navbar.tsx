@@ -20,7 +20,7 @@ const Navbar = () => {
         
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0">
           <button type="button" className="btn_basic btn_primary hidden md:flex">
-            0145243524
+            comparer les forfaits
           </button>
           <button
             type="button"

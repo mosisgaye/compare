@@ -1,4 +1,5 @@
 import Filter from '@/components/Filter'
+import Hero1 from '@/components/Hero1'
 
 import ProductsList from '@/components/ProductsList'
 import { INFINITE_SCROLL_LIMIT, categories } from '@/config'
@@ -55,11 +56,15 @@ const Products = async ({
 
   return (
     <div className='flex flex-col py-6 sm:py-10 px-4 sm:px-6 lg:px-8'>
+      <div className='text-black text-4xl pb-16  '>
+        {'  '}
+      </div>
+      <Hero1 />
       <div className="mt-8 sm:mt-10 mb-4 sm:mb-6"></div>
       <div className="flex justify-center mb-4 sm:mb-6">
         <Filter categories={categories} className='mt-8 sm:mt-10' />
-        <div className="w-2" />
-        <Filter categories={categories} className='mt-8 sm:mt-10' />
+
+
       </div>
       <ProductsList initialProducts={products} totalData={totalProducts} />
     </div>
