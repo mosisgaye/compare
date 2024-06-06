@@ -20,7 +20,7 @@ const Accordion = () => {
                 <div id="MEA1-iphone15-mobile" className={`hero iphone15-mobile w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-fuchsia-500 to-pink-500 p-6 rounded-lg ${activeIndex === 0 ? '' : 'hidden'}`}>
                     <div className="L text-center md:text-left text-white">
                         <strong className="text-3xl">iPhone 15</strong>
-                        <p>De la magie dans l’image</p>
+                        <p>De la magie dans l&apos;image</p>
                     </div>
                     <div className="M flex justify-center relative">
                         <Image className="illu w-80 h-auto"
@@ -147,7 +147,7 @@ const Accordion = () => {
                     </div>
 
                     <div className="R text-center md:text-right text-white">
-                        <strong className="apd block text-lg">jusqu'à</strong>
+                        <strong className="apd block text-lg">jusqu&apos;à</strong>
                         <div className="price text-6xl flex justify-center md:justify-end items-start">
                             <span className="L">8</span>
                             <span className="R text-2xl">€</span>
@@ -167,6 +167,3 @@ const Accordion = () => {
 };
 
 export default Accordion;
-
-
-
