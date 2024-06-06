@@ -1,13 +1,12 @@
-'use client'
-
-import { Category, Product } from '@prisma/client';
+import { Category, Product as PrismaProduct } from '@prisma/client';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
+import { Image as ProductImage } from '@/types/images'; // Importez le type Image défini
 
 interface ProductCardProps {
-  product: Product & {
+  product: PrismaProduct & {
     Category: Category;
-    images: string;
+    images: ProductImage[]; // Utilisez le type correct ici
   };
 }
 
@@ -18,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {/* Images and Actions */}
         <div className="aspect-square m-3 rounded-2xl bg-gray-100 relative w-12 h-24 sm:w-full sm:h-32">
           <Image
-            src={product.images?.[0]}    
+            src={product.images?.[0]?.url} // Assurez-vous d'utiliser le bon chemin pour l'URL de l'image
             sizes="200"
             alt={product.name}
             className="aspect-square object-cover rounded-2xl"
@@ -50,6 +49,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 };
 
 export default ProductCard;
+
 
 
 
