@@ -30,7 +30,7 @@ model Product {
   slug        String
   description String?     @db.Text
   price       Decimal
-  images      Json
+  images      String[]
   categoryId  String
   Category    Category    @relation(fields: [categoryId], references: [slug])
   createdAt   DateTime    @default(now())

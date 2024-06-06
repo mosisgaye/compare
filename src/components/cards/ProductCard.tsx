@@ -1,13 +1,14 @@
-'use client'
 
-import { Category, Product } from '@prisma/client';
+
+import React from 'react';
+import Image from 'next/image'; // Assurez-vous d'importer correctement Image depuis next/image
+import { Product, Category } from '@prisma/client';
 import { MoveRight } from 'lucide-react';
-import Image from 'next/image';
 
 interface ProductCardProps {
   product: Product & {
     Category: Category;
-    images: string;
+    images: string[]; // Supposons que les images sont stockées sous forme de tableau de chaînes (URL)
   };
 }
 
@@ -17,14 +18,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <a href="" target="_blank" rel="noopener noreferrer">
         {/* Images and Actions */}
         <div className="aspect-square m-3 rounded-2xl bg-gray-100 relative w-12 h-24 sm:w-full sm:h-32">
-          <Image
-            src={product.images?.[0]}    
-            sizes="200"
-            alt={product.name}
-            className="aspect-square object-cover rounded-2xl"
-            width={100}
-            height={70}
-          />
+          {product.images && product.images.length > 0 && (
+            <Image
+              src={product.images[0]} // Utilisez le premier élément du tableau d'URL d'images
+              alt={product.name}
+              className="aspect-square object-cover rounded-2xl"
+              width={100}
+              height={70}
+            />
+          )}
         </div>
         <div className="px-4 space-y-3 pb-6">
           <div className="space-y-1">
@@ -50,9 +52,3 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 };
 
 export default ProductCard;
-
-
-
-
-
-
