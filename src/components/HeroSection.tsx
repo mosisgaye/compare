@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ offers }) => {
             <div className='flex flex-wrap items-center gap-4 btn_primary cursor-pointer'>
               <Link href='/forfait' className='text-white'>Voir maintenant</Link>
             </div>
-          </div>
+          </div>   
         </div>
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           {offers.map((offer) => (
