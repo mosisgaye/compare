@@ -1,5 +1,6 @@
 import React from 'react';
-import '@/app/globals.css';
+import '@/app/globals.css'; 
+import Image from 'next/image';
 
 type Offer = {
   id: string;
@@ -25,7 +26,7 @@ const MiniCardGrid: React.FC<MiniCardGridProps> = ({ offers }) => {
       {offers.map((offer) => (
         <div key={offer.id} className="bg-white text-black dark:bg-[#012737] dark:text-white rounded-lg p-6 flex flex-col justify-between h-full transform transition-transform hover:-translate-y-1 shadow-2xl">
           <div className="flex items-center mt-4">
-            <img src={offer.operatorLogo} alt={offer.operatorName} className="w-20 h-20 rounded-full mr-4" />
+            <Image src={offer.operatorLogo} alt={offer.operatorName} className="w-20 h-20 rounded-full mr-4" />
             <div className="flex flex-col">
               <h3 className="text-lg font-bold">{offer.operatorName}</h3>
               <span className="text-gray-400">{offer.planName}</span>
