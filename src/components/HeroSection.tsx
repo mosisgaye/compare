@@ -50,9 +50,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ offers }) => {
                   <a href={offer.link} className="text-black dark:text-white">{offer.description}</a>
                 </h3>
                 <div className="text-sm mb-2">
-                  <strong>Appels/SMS/MMS: :</strong> {offer.calls}
+                  <strong>Appels/SMS/MMS :</strong> {offer.calls}
                 </div>
-          
                 <div className="text-sm mb-2">
                   <strong>Data :</strong> {offer.data}
                 </div>
@@ -61,7 +60,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ offers }) => {
                 </div>
               </div>
               <a href={offer.link} className="bg-[#f05153] text-white rounded px-3 py-1 font-semibold text-center mt-4">
-                Voir l'offre
+                Voir l&apos;offre
               </a>
             </div>
           ))}
@@ -72,3 +71,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({ offers }) => {
 };
 
 export default HeroSection;
+
