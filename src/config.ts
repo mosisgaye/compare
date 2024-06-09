@@ -1,4 +1,4 @@
-import { Category } from '@prisma/client/edge'
+import { Category } from '@prisma/client/'
 
 export const INFINITE_SCROLL_LIMIT = 8
 

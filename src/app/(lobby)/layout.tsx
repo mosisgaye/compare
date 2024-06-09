@@ -7,13 +7,12 @@ export default async function LobbyLayout({
 }: {
   children: React.ReactNode
 }) {
-
-
   return (
-    <div>
-      <Navbar/>
-      <div>{children}</div>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <div className="flex-grow">{children}</div>
       <Footer />
     </div>
   )
 }
+

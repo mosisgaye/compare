@@ -1,7 +1,5 @@
 
 import type { Metadata } from 'next'
-
-
 import ClientProvider from '@/providers/ClientProvider'
 
 import './globals.css'
@@ -46,8 +44,7 @@ export default function RootLayout({
   return (
     <html lang='fr'>
       <body>
-        <ClientProvider>
-   
+        <ClientProvider>  
           {children}
         </ClientProvider>
       </body>

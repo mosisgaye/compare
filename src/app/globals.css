@@ -30,6 +30,72 @@ body.dark {
   color: #FFFFFF !important;
 }
 
+body {
+  margin: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+  text-underline-offset: .25em;
+}
+*,*:before,*:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb
+}
+
+
+
+
+
+/* Ajoutez ces styles à votre fichier CSS ou en tant que classes Tailwind personnalisées */
+
+/* Exemple de classe pour l'espacement et le style des cartes */
+.mini-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.mini-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pour aligner correctement les éléments dans chaque carte */
+.mini-card .author-row {
+  align-items: center;
+}
+
+.mini-card .tags a {
+  margin-right: 8px;
+  color: #3b82f6; /* Adjust color as needed */
+}
+
+.mini-card .tags a:hover {
+  text-decoration: underline;
+}
+
+/* Pour espacer les cartes entre elles dans la grille */
+.mini-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px; /* Adjust gap as needed */
+}
+
+/* Pour les éléments de date */
+.mini-card time {
+  font-size: 0.875rem;
+  color: #6b7280; /* Adjust color as needed */
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -55,7 +121,7 @@ p {
 
 .cky-consent-container {
   position: fixed;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   z-index: 9999999;
 }
@@ -1700,4 +1766,53 @@ input[type="checkbox"] {
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
+}
+
+
+
+
+
+
+/* Add this at the end of your Tailwind base styles */
+.switch input {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4c51bf;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
 }

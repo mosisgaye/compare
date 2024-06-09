@@ -25,19 +25,21 @@ model Category {
 }
 
 model Product {
-  id          String      @id
-  name        String
-  slug        String
-  description String?     @db.Text
-  price       Decimal
-  images      String[]
-  categoryId  String
-  Category    Category    @relation(fields: [categoryId], references: [slug])
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime?    
+  id            String      @id
+  name          String
+  slug          String
+  description   String?     @db.Text
+  price         Decimal
+  images        String[]
+  affiliateLink String?    
+  categoryId    String
+  Category      Category    @relation(fields: [categoryId], references: [slug])
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime?    
 
   @@index([categoryId, name, slug])
 }
+
 
 
 

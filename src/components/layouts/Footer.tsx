@@ -28,13 +28,13 @@ const Footer = () => {
             <Link href="/policy" title="Page : Conditions Générales de Service" className="text-white">
               Conditions Générales -{" "}
             </Link>{" "}
-            <Link href="/privacy" title="Page : Votre Vie Privée Compte. Notre Politique de Confidentialité" className="text-white">
+            <Link href="/policy" title="Page : Votre Vie Privée Compte. Notre Politique de Confidentialité" className="text-white">
               Politique de Confidentialité -{" "}
             </Link>{" "}
-            <Link href="/cookie" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
+            <Link href="/policy" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
               Politique de Cookie - {" "}
             </Link>
-             <Link href="/cookie" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
+             <Link href="/policy" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
               Mention légale{" "}
             </Link>
           </div>

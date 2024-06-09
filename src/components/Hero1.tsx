@@ -8,7 +8,7 @@ const Accordion = () => {
     // Fonction pour faire défiler automatiquement les héros
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setActiveIndex((prevIndex) => (prevIndex + 1) % 4);
+            setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
         }, 3000); // Change l'index toutes les 3 secondes
 
         return () => clearInterval(intervalId); // Nettoyage de l'intervalle quand le composant est démonté
@@ -125,40 +125,7 @@ const Accordion = () => {
                     </div>
                 </div>
 
-                <div id="MEA4-Box-8x" className={`hero Box-8x w-full ${activeIndex === 3 ? '' : 'hidden'} flex-col md:flex-row items-center justify-between bg-gradient-to-r from-fuchsia-500 to-pink-500 p-6 rounded-lg`}>
-                    <div className="L text-center md:text-left text-white">
-                        <strong className="text-3xl">fibre SFR Box 8X</strong>
-                        <p>Une puissance incroyable</p>
-                    </div>
-                
-                    <div className="M flex justify-center">
-                        <Image className="illu mob w-40 h-auto"
-                            src="/images/22745_visuel_mobile.webp"
-                            alt="Google Pixel 8a, 150€ de bonus reprise"
-                            width={312}
-                            height={416}
-                        />
-                        <Image className="illu w-80 h-auto"
-                            src="/images/22745_visuel_desktop.webp"
-                            alt="Google Pixel 8a, 150€ de bonus reprise"
-                            width={1240}
-                            height={627}
-                        />
-                    </div>
-
-                    <div className="R text-center md:text-right text-white">
-                        <strong className="apd block text-lg">jusqu&apos;à</strong>
-                        <div className="price text-6xl flex justify-center md:justify-end items-start">
-                            <span className="L">8</span>
-                            <span className="R text-2xl">€</span>
-                            <span className="R text-xl">Gb/s*</span>
-                        </div>
-                        <a href="/box-8/" className="btn3 bg-white text-red-600 px-6 py-3 rounded-full mt-4 inline-block">Découvrir</a>
-                    </div>
-                    <div className="B text-center mt-4">
-                        <span>*Avec SFR Fibre Premium, voir conditions</span>
-                    </div>
-                </div>
+            
             </div>
 
         
