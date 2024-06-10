@@ -1,21 +1,19 @@
-// src/pages/lobby.tsx
 
 import Alerte from '@/components/Alerte';
+import Carousel from '@/components/Carousel';
+import Carousole from '@/components/Carousel';
 import Categories from '@/components/Categories';
 import Cookies from '@/components/Cookies';
-import HeroSection from '@/components/HeroSection';
-
 import Products from '@/components/Products';
 import Review from '@/components/Review';
 
-// Importer les articles depuis le fichier centralisé
-import { offers } from '@/data/articles';
+
 
 export default function Lobby() {
   return (
-    <main>
+    <main className='py-20'>
       <div>
-        <HeroSection offers={offers} />
+        <Carousel />
       </div>
       <div className="max-w-7xl mx-auto">
         <Categories />

@@ -1,0 +1,49 @@
+
+[
+  {
+    "logo": "/images/sfr.png",
+    "alt": "Logo de SFR",
+    "details": {
+      "dataLeft": "100 Go",
+      "dataLeftSmall": "15 Go en Europe",
+      "price": "7,99€",
+      "priceSmall": "/mois"
+    },
+    "offer": "Appels, SMS et MMS illimités"
+  },
+  {
+    "logo": "/images/orange.png",
+    "alt": "Logo de Orange",
+    "details": {
+      "dataLeft": "100 Go",
+      "dataLeftSmall": "15 Go en Europe",
+      "price": "7,99€",
+      "priceSmall": "/mois"
+    },
+    "offer": "Appels, SMS et MMS illimités"
+  },
+  {
+    "logo": "/images/you.png",
+    "alt": "Logo de You",
+    "details": {
+      "dataLeft": "100 Go",
+      "dataLeftSmall": "15 Go en Europe",
+      "price": "7,99€",
+      "priceSmall": "/mois"
+    },
+    "offer": "Appels, SMS et MMS illimités"
+  },
+  {
+    "logo": "/images/coriolis.png",
+    "alt": "Logo de Coriolis",
+    "details": {
+      "dataLeft": "100 Go",
+      "dataLeftSmall": "15 Go en Europe",
+      "price": "7,99€",
+      "priceSmall": "/mois"
+    },
+    "offer": "Appels, SMS et MMS illimités"
+  }
+]
+
+  

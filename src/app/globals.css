@@ -47,48 +47,171 @@ body {
 
 
 
-/* Ajoutez ces styles à votre fichier CSS ou en tant que classes Tailwind personnalisées */
 
-/* Exemple de classe pour l'espacement et le style des cartes */
-.mini-card {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
+
+
+
+      
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  /* Séparer les sections */
+  align-items: flex-start;
+  max-width: 85%;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+  /* Espace entre les sections */
 }
 
-.mini-card:hover {
-  transform: translateY(-5px);
+.text-section {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Pour aligner correctement les éléments dans chaque carte */
-.mini-card .author-row {
+.text-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.compare-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #79CE25;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.compare-button:hover {
+  background-color: #67b721;
+}
+
+/* Section de la carte */
+.card-section {
+  flex: 1;
+ position: relative;
+width: 300px;
+margin-right: 2.5rem;
+transform: scale(0.85);
+display: grid;
+grid-template-columns: 1fr;
+align-items: end;
+
+  /* Ajouter un padding pour séparer les sections */
+}
+
+.card {
+  background-color: #fff;
+  border: 3px solid #9BEC00;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-logo {
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
-.mini-card .tags a {
-  margin-right: 8px;
-  color: #3b82f6; /* Adjust color as needed */
+.card-details span {
+  display: block;
 }
 
-.mini-card .tags a:hover {
-  text-decoration: underline;
+.card .text-left span {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* Pour espacer les cartes entre elles dans la grille */
-.mini-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px; /* Adjust gap as needed */
+.card .text-right span {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-/* Pour les éléments de date */
-.mini-card time {
-  font-size: 0.875rem;
-  color: #6b7280; /* Adjust color as needed */
+.card p {
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 
+.offer-button:hover {
+  background-color: #67b721;
+}
+
+/* Styles spécifiques au carrousel */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  height: 400px;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+  /* 3 items */
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item:not(.active) {
+  display: none;
+  /* Cacher les items non actifs */
+}
+
+.carousel-indicators {
+  
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #8dd086;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #3182ce;
+}
 
 
 
