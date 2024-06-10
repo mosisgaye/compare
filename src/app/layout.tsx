@@ -1,6 +1,7 @@
+
 import type { Metadata } from 'next'
 import ClientProvider from '@/providers/ClientProvider'
-import Head from 'next/head' // Ajout de l'import pour Head
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -42,9 +43,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='fr'>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> // Balise meta pour la vue
-      </Head>
       <body>
         <ClientProvider>  
           {children}
