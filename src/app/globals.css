@@ -44,21 +44,9 @@ body {
 }
 
 
-
-
-
-
-
-
-
-      
-
-
 .content {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
-  color: #000;
   /* Séparer les sections */
   align-items: flex-start;
   max-width: 85%;
@@ -114,6 +102,7 @@ align-items: end;
 
   /* Ajouter un padding pour séparer les sections */
 }
+
 
 .card {
   background-color: #fff;
@@ -235,6 +224,7 @@ p {
 
 .cky-consent-container {
   font-family: "Open Sans", sans-serif;
+  border-radius: 15px 50px;
 }
 
 .cky-classic-bottom {
@@ -244,9 +234,12 @@ p {
 
 .cky-consent-container {
   position: fixed;
-  width: 80%;
+  width: 40%;
+  height: 40%;
   box-sizing: border-box;
   z-index: 9999999;
+  
+
 }
 
 .cky-consent-container .cky-consent-bar {
@@ -259,18 +252,13 @@ p {
 .cky-notice .cky-title {
   color: #212121;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   margin: 0 0 10px 0;
   overflow-wrap: break-word;
   color: #012737;
 }
 
-element {
-  color: #79CE25;
-  border-color: #79CE25;
-  background-color: transparent;
-}
 
 .cky-notice-btn-wrapper .cky-btn {
   text-shadow: none;
@@ -282,14 +270,7 @@ element {
   border-radius: 8px;
 }
 
-.cky-btn-customize {
-  color: #1863dc;
-  background: transparent;
-  border: 2px solid;
-  border-color: #1863dc;
-  padding: 8px 28px 8px 14px;
-  position: relative;
-}
+
 
 .cky-btn {
   font-size: 14px;

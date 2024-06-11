@@ -1,5 +1,6 @@
 
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import ClientProvider from '@/providers/ClientProvider'
 
 import './globals.css'
@@ -43,10 +44,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='fr'>
+   
       <body>
-        <ClientProvider>  
+       
+        <ClientProvider>
           {children}
         </ClientProvider>
+      
       </body>
     </html>
   )
