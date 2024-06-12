@@ -6,8 +6,8 @@ import '@/app/globals.css';
 
 const Footer = () => {
   return (
-    <footer className="text-white border-t ph_footer py-12 max-w-screen-2xl" style={{ backgroundColor: "#012737" }}>
-      <div className="mx-auto text-center">
+    <footer className="text-white border-t ph_footer py-12" style={{ backgroundColor: "#012737" }}>
+      <div className="max-w-screen-xl mx-auto text-center px-4">
         <div className="item_copyright whitespace-nowrap">
           <div className="made_with italic">
             <span className="text-green-500">
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Separator */}
-        <Separator.Root className="max-w-screen-2xl my-6" />
+        <Separator.Root className="max-w-screen-2xl my-6 mx-auto" />
         {/* Separator */}
       </div>
     </footer>
