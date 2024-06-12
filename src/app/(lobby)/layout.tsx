@@ -8,11 +8,12 @@ export default async function LobbyLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex flex-col">
+    <div>
       <Navbar />
       <div className="flex-grow">{children}</div>
       <Footer />
     </div>
+   
   )
 }
 
