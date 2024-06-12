@@ -32,7 +32,7 @@ const Carousel: React.FC = () => {
         <section className="text-section md:w-1/2 flex flex-col justify-center items-start space-y-4">
           <h1 className="text-4xl font-bold mb-4">Trouvez votre forfait mobile</h1>
           <p className="mb-4">
-            Découvrez les meilleures offres en un clin d'œil ! Chaque jour, nous comparons <strong>des centaines de forfaits</strong> mobile, Box Internet et Énergie (Gaz et Électricité) pour vous dénicher celui qui vous correspond parfaitement.
+          Découvrez les meilleures offres en un clin d'œil ! Chaque jour, nous comparons <strong>des centaines de forfaits</strong> mobile, Box Internet et Énergie (Gaz et Électricité) pour vous dénicher celui qui vous correspond parfaitement.
           </p>
           <a href="/" className="compare-button bg-[#79CE25] text-white font-semibold py-2 px-4 rounded-lg">
             Comparer les forfaits
@@ -69,7 +69,7 @@ const Carousel: React.FC = () => {
                     role="button"
                     className="button-offre inline-block rounded-[20px] whitespace-nowrap bg-[#f05153] text-white px-3 py-1 self-center font-semibold shadow-sm"
                   >
-                    Voir l’offre
+                    Voir l&apos;offre
                   </span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Carousel: React.FC = () => {
                     role="button"
                     className="button-offre inline-block rounded-[20px] whitespace-nowrap bg-[#f05153] text-white px-3 py-1 self-center font-semibold shadow-sm"
                   >
-                    Voir l’offre
+                    Voir l&apos;offre
                   </span>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const Carousel: React.FC = () => {
                     role="button"
                     className="button-offre inline-block rounded-[20px] whitespace-nowrap bg-[#f05153] text-white px-3 py-1 self-center font-semibold shadow-sm"
                   >
-                    Voir l’offre
+                    Voir l&apos;offre
                   </span>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const Carousel: React.FC = () => {
                     role="button"
                     className="button-offre inline-block rounded-[20px] whitespace-nowrap bg-[#f05153] text-white px-3 py-1 self-center font-semibold shadow-sm"
                   >
-                    Voir l’offre
+                    Voir l&apos;offre
                   </span>
                 </div>
               </div>
