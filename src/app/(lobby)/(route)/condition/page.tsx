@@ -18,8 +18,8 @@ const Condition = () => {
         <p className="paragraph2">
           Notre site utilise des cookies pour améliorer votre expérience
           utilisateur et vous fournir un contenu personnalisé. En continuant à
-          naviguer sur ce site, vous consentez à l'utilisation de cookies. Pour
-          plus d'informations sur l'utilisation des cookies et sur la manière de
+          naviguer sur ce site, vous consentez à l&apos;utilisation de cookies. Pour
+          plus d&apos;informations sur l'utilisation des cookies et sur la manière de
           les gérer, veuillez consulter notre politique de cookies.
         </p>
       </article>

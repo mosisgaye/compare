@@ -21,7 +21,7 @@ const Policy = () => {
           confidentialité de vos informations personnelles. Notre politique de
           confidentialité décrit en détail comment nous recueillons, utilisons,
           stockons et protégeons vos données. Elle précise également vos droits
-          en tant qu'utilisateur et les mesures que nous prenons pour assurer la
+          en tant qu&apos;utilisateur et les mesures que nous prenons pour assurer la
           sécurité de vos informations. Pour explorer notre approche en matière
           de confidentialité, veuillez consulter notre politique de
           confidentialité complète.
