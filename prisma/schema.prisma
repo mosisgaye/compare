@@ -31,6 +31,7 @@ model Product {
   description   String?     @db.Text
   price         Decimal
   images        String[]
+  boxImages     String[]   // Nouvelle colonne pour les images spécifiques aux box
   affiliateLink String?    
   categoryId    String
   Category      Category    @relation(fields: [categoryId], references: [slug])

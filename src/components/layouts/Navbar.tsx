@@ -10,7 +10,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // État pour le menu mobile
 
   return (
-    <nav className="bg-white dark:bg-[#012737]">
+    <nav className="max-w-7xlbg-white dark:bg-[#012737] top-0 bg-background shadow-sm">
       <div className="max-w-screen-xl mx-auto flex flex-wrap gap-10 items-center justify-between py-3">
         <Link href="/" className="flex items-center px-10">
           <Image src="/images/comparetelecom.png" alt="Flowbite Logo" width={150} height={125} />

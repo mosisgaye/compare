@@ -1,11 +1,15 @@
+import { Metadata } from 'next'
+
 import Filter from '@/components/Filter'
 import Hero1 from '@/components/Hero1'
-
 import ProductsList from '@/components/ProductsList'
 import { INFINITE_SCROLL_LIMIT, categories } from '@/config'
 import prisma from '@/lib/db'
 
 
+export const metadata: Metadata = {
+  title: 'Forfait Mobile',
+}
 
 const Products = async ({
   searchParams,
@@ -55,7 +59,7 @@ const Products = async ({
   }
 
   return (
-    <div className='flex flex-col py-6 sm:py-10 px-4 sm:px-6 lg:px-8'>
+    <div className='max-w-7xl mx-auto text-center px-4'>
       <div className='text-black text-4xl pb-16  '>
         {'  '}
       </div>

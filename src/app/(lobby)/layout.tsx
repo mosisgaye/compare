@@ -10,7 +10,7 @@ export default async function LobbyLayout({
   return (
     <div>
       <Navbar />
-      <div className="flex-grow">{children}</div>
+      <div>{children}</div>
       <Footer />
     </div>
    

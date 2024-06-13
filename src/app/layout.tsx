@@ -2,7 +2,6 @@
 import type { Metadata } from 'next'
 import Head from 'next/head'
 import ClientProvider from '@/providers/ClientProvider'
-
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -35,7 +34,7 @@ export default function RootLayout({
      <head>
       
      </head>
-      <body>
+      <body className='__className_aaf875 bg-background'>
        
         <ClientProvider>
           {children}
