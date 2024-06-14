@@ -56,7 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               role="button"
               className="button-offre inline-block rounded-[20px] whitespace-nowrap bg-[#f05153] text-white px-3 py-1 self-center font-semibold shadow-sm bf-1x8vhjm"
             >
-              Voir l’offre
+              Voir l&apos;offre
             </span>
           </div>
         </div>

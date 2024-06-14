@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface StarFilledProps {
@@ -15,12 +14,13 @@ const StarFilled: React.FC<StarFilledProps> = ({ className }) => (
     <path d="M9.049 2.927a.998.998 0 011.902 0l1.134 3.486a1 1 0 00.95.69h3.59a1 1 0 01.588 1.81l-2.905 2.11a1 1 0 00-.364 1.118l1.11 3.413a1 1 0 01-1.537 1.117l-2.926-2.122a1 1 0 00-1.18 0l-2.926 2.122a1 1 0 01-1.537-1.117l1.11-3.413a1 1 0 00-.364-1.118l-2.905-2.11a1 1 0 01.588-1.81h3.59a1 1 0 00.95-.69l1.134-3.486z" />
   </svg>
 );
+
 const Review = () => {
   return (
-    <section className="bg-gray-100 text-black py-10">
+    <section className="py-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-semibold">Ce que disent les clients à propos de CompareTelecom</h2>
+          <h2 className="text-3xl font-semibold">A propos des clients de CompareTelecom</h2>
           <div className="flex items-center justify-center mt-4">
             <h2 className="text-5xl font-bold">4.9</h2>
             <div className="ml-4">
@@ -62,7 +62,6 @@ const Review = () => {
             rel="noopener noreferrer"
             title="Google: Soumettre un avis"
           >
-
             Soumettre un avis <StarFilled className="inline-block w-5 h-5 ml-2 text-yellow-400" />
           </a>
         </div>

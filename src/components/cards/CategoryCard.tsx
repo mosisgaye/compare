@@ -24,11 +24,11 @@ const CategoryCard: React.FC<CategoryCardProps> = async ({ category }) => {
 
   return (
     <Link href={`/forfait?category=${category.slug}`}>
-      <Card className='relative overflow-hidden bg-white transition-transform transform group hover:bg-[#f1ffe2] hover:scale-105 rounded-2xl '>
+      <Card className='max-w-screen-xl relative overflow-hidden bg-white transition-transform transform group hover:bg-[#f1ffe2] hover:scale-105 rounded-2xl '>
         <CardHeader className='flex justify-center items-center'>
           <Image
             src={`/svg/${category.slug}.png`}
-            alt='test'
+            alt={category.name}
             width={100}
             height={75}
           />

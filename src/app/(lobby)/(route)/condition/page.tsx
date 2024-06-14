@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Metadata } from 'next'
+import { Metadata } from 'next';
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: 'Condition',
-}
+  description: "Notre site utilise des cookies pour améliorer votre expérience utilisateur et vous fournir un contenu personnalisé.",
+};
 
 const Condition = () => {
   return (
@@ -18,8 +19,8 @@ const Condition = () => {
         <p className="paragraph2">
           Notre site utilise des cookies pour améliorer votre expérience
           utilisateur et vous fournir un contenu personnalisé. En continuant à
-          naviguer sur ce site, vous consentez à l&apos;utilisation de cookies. Pour
-          plus d&apos;informations sur l'utilisation des cookies et sur la manière de
+          naviguer sur ce site, vous consentez à l'utilisation de cookies. Pour
+          plus d'informations sur l'utilisation des cookies et sur la manière de
           les gérer, veuillez consulter notre politique de cookies.
         </p>
       </article>

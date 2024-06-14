@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
 import Filter from '@/components/Filter';
-import Hero1 from '@/components/Hero1';
 import ProductsList from '@/components/ProductsList';
 import { INFINITE_SCROLL_LIMIT, categories } from '@/config';
 
@@ -35,11 +34,11 @@ const MobileProducts = ({ searchParams }: { searchParams: SearchParams }) => {
   }, [searchParams]);
 
   return (
-    <div className='max-w-7xl mx-auto text-center px-4'>
+    <div className='max-w-screen-xl mx-auto text-center px-4'>
       <div className='text-black text-4xl pb-16'>
         Offres Mobiles
       </div>
-      <Hero1 />
+      
       <div className="mt-8 sm:mt-10 mb-4 sm:mb-6"></div>
       <div className="flex justify-center mb-4 sm:mb-6">
         <Filter categories={categories} className='mt-8 sm:mt-10' />

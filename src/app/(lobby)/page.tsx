@@ -1,7 +1,7 @@
 
 import Alerte from '@/components/Alerte';
 import Carousel from '@/components/Carousel';
-import Carousole from '@/components/Carousel';
+import Articles from '@/components/Articles'
 import Categories from '@/components/Categories';
 import Cookies from '@/components/Cookies';
 import Products from '@/components/Products';
@@ -21,6 +21,7 @@ export default function Lobby() {
         <Alerte />
         <Cookies />
         <Review />
+        <Articles />
   
       </div>
     </main>
