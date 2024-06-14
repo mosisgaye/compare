@@ -42,7 +42,7 @@ const Mention = () => {
             Les cookies sont de petits fichiers utilisés pour identifier les
             utilisateurs d&apos;un site. Depuis la mise en œuvre du règlement
             européen sur la protection des données personnelles, leur usage est
-            encadré et il est nécessaire d'obtenir le consentement de
+            encadré et il est nécessaire d&apos;obtenir le consentement de
             l&apos;utilisateur avant de les utiliser. Sur ComparaTelecom, nous
             n&apos;utilisons pas de cookies et ne recueillons pas de données
             personnelles lors de la navigation.
