@@ -1,5 +1,7 @@
 import { Category } from '@prisma/client/'
 
+export const GTM_ID = 'GTM-P8JWP6N9';
+
 export const INFINITE_SCROLL_LIMIT = 8
 
 export const ORDER_INFINITE_SCROLL_LIMIT = 3

@@ -1,4 +1,6 @@
 import ClientProvider from '@/providers/ClientProvider';
+import { GoogleTagManager } from '@next/third-parties/google'
+
 import './globals.css';
 
 // Métadonnées globales
@@ -30,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
+      <GoogleTagManager gtmId="GTM-XYZ" />
         <ClientProvider>
           {children}
         </ClientProvider>
