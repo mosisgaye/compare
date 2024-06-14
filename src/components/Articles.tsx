@@ -24,7 +24,7 @@ const Articles = () => {
   return (
     <article className="section-how-it-works__step ph_inner_spacer p-4 md:p-8 shadow-lg rounded-lg dark:bg-[#102a43] dark:text-white">
       <h1 className="text-xl md:text-2xl font-medium mb-4">
-        Forfait Mobile Pas Cher : Trouvez les Meilleures Offres en 2024
+        Forfait Mobile Pas Cher
       </h1>
 
       <div>
@@ -76,7 +76,7 @@ const Articles = () => {
         </div>
         {isExpanded[3] && (
           <p className="text-black dark:text-white mb-4">
-            En résumé, trouver un forfait mobile pas cher peut être simple si vous savez où chercher et quels critères prendre en compte. Explorez nos recommandations pour économiser sur votre facture mensuelle de télécommunication. Utilisez notre outil de comparaison pour trouver l'offre qui vous convient le mieux ou contactez-nous pour obtenir des conseils personnalisés sur les forfaits mobiles pas chers.
+            En résumé, trouver un forfait mobile pas cher peut être simple si vous savez où chercher et quels critères prendre en compte. Explorez nos recommandations pour économiser sur votre facture mensuelle de télécommunication. Utilisez notre outil de comparaison pour trouver l&apos;offre qui vous convient le mieux ou contactez-nous pour obtenir des conseils personnalisés sur les forfaits mobiles pas chers.
           </p>
         )}
       </div>
