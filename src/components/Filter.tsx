@@ -64,38 +64,7 @@ const Filter: React.FC<FilterProps> = ({ categories, className, ...props }) => {
           </div>
         </SheetContent>
       </Sheet>
-      <div className="w-2" />
-      <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger asChild>
-          <Button className='flex items-center gap-x-2 bg-[#79CE25]'>
-            Offres moins chères
-            <Plus />
-          </Button>
-        </SheetTrigger>
-        <SheetContent side='right'>
-          <div className='px-2 flex flex-col gap-4'>
-            <h3 className='text-lg text-[#79CE25] font-semibold'>Les opérateurs</h3>
-            <Separator />
-            <div className='flex flex-wrap gap-2'>
-              {categories.map((category) => (
-                <div
-                  key={category.slug}
-                  onClick={() => changeCategory(category.slug)}
-                  className='flex items-center'
-                >
-                  <Button
-                    variant={
-                      selectedCategory === category.slug ? 'default' : 'outline'
-                    }
-                  >
-                    {category.name}
-                  </Button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </SheetContent>
-      </Sheet>
+  
     </div>
   )
 }
