@@ -40,18 +40,18 @@ const Mention = () => {
           <h2 className="heading2">Cookies</h2>
           <p className="paragraph2">
             Les cookies sont de petits fichiers utilisés pour identifier les
-            utilisateurs d'un site. Depuis la mise en œuvre du règlement
+            utilisateurs d&apos;un site. Depuis la mise en œuvre du règlement
             européen sur la protection des données personnelles, leur usage est
             encadré et il est nécessaire d'obtenir le consentement de
-            l'utilisateur avant de les utiliser. Sur ComparaTelecom, nous
-            n'utilisons pas de cookies et ne recueillons pas de données
+            l&apos;utilisateur avant de les utiliser. Sur ComparaTelecom, nous
+            n&apos;utilisons pas de cookies et ne recueillons pas de données
             personnelles lors de la navigation.
           </p>
 
-          <h2 className="heading2">Liens d'affiliation</h2>
+          <h2 className="heading2">Liens d&apos;affiliation</h2>
           <p className="paragraph2">
             Lorsque vous cliquez sur une offre, nous utilisons un lien
-            d'affiliation et recevons une rémunération de l'opérateur
+            d&apos;affiliation et recevons une rémunération de l&apos;opérateur
             si vous souscrivez à un forfait.
           </p>
         </section>
