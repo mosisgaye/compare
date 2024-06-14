@@ -1,3 +1,4 @@
+import Toplan from "@/components/Toplan"
 
 
 
@@ -9,7 +10,7 @@ const Box = () => {
      {'  '}
     </div>
 
-
+ <Toplan />
   
 
      </div>
