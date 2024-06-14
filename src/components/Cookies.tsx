@@ -33,12 +33,12 @@ const Cookies = () => {
         <div className="fixed bottom-0 left-0 w-full p-4 md:p-8 bg-white border-t-4 border-green-500 shadow-lg transform translate-y-full transition-transform duration-500 ease-in-out" style={{ backgroundColor: "#FFFFFF" }}>
           <div className="cky-notice">
             <p className="cky-title font-bold text-lg mb-2" role="heading" aria-level={1} style={{ color: "#012737" }}>
-              Nous accordons de l'importance à votre vie privée
+              Nous accordons de l&apos;importance à votre vie privée
             </p>
             <div className="cky-notice-group">
               <div className="cky-notice-des text-gray-800" style={{ color: "#012737" }}>
                 <p>
-                  Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des annonces ou du contenu personnalisé et analyser notre trafic. En cliquant sur Accepter Tout, vous consentez à notre utilisation des cookies. Politique relative aux cookies. &nbsp;
+                  Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des annonces ou du contenu personnalisé et analyser notre trafic. En cliquant sur Accepter Tout, vous consentez à notre utilisation des cookies. Politique relative aux cookies.
                   <a href="#" className="cky-policy underline text-green-600" aria-label="Cookie Policy" onClick={handleAcceptCookies}>
                     Politique de cookie
                   </a>
