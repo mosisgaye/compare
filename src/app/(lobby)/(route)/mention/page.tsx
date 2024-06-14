@@ -3,18 +3,18 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Mentions Légales",
-  description: "Consultez les mentions légales de notre site pour plus d'informations sur l'éditeur, l'hébergeur, l'utilisation des cookies et les liens d'affiliation.",
-  keywords: "mentions légales, éditeur, hébergeur, cookies, liens d'affiliation, ComparaTelecom",
+  description: "Consultez les mentions légales de notre site pour plus d&apos;informations sur l&apos;éditeur, l&apos;hébergeur, l&apos;utilisation des cookies et les liens d&apos;affiliation.",
+  keywords: "mentions légales, éditeur, hébergeur, cookies, liens d&apos;affiliation, ComparaTelecom",
   openGraph: {
     title: "Mentions Légales",
-    description: "Consultez les mentions légales de notre site pour plus d'informations sur l'éditeur, l'hébergeur, l'utilisation des cookies et les liens d'affiliation.",
+    description: "Consultez les mentions légales de notre site pour plus d&apos;informations sur l&apos;éditeur, l&apos;hébergeur, l&apos;utilisation des cookies et les liens d&apos;affiliation.",
     url: `${process.env.NEXT_PUBLIC_APP_URL}/mentions-legales`,
   },
   twitter: {
     card: "summary",
     site: "@votrecompte",
     title: "Mentions Légales",
-    description: "Consultez les mentions légales de notre site pour plus d'informations sur l'éditeur, l'hébergeur, l'utilisation des cookies et les liens d'affiliation.",
+    description: "Consultez les mentions légales de notre site pour plus d&apos;informations sur l&apos;éditeur, l&apos;hébergeur, l&apos;utilisation des cookies et les liens d&apos;affiliation.",
   },
 };
 
