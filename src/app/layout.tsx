@@ -1,5 +1,6 @@
 import ClientProvider from '@/providers/ClientProvider';
 import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
 import './globals.css';
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Analytics />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-DYKC89LEW0" />
     </html>
   );
 }
