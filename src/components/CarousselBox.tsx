@@ -8,7 +8,7 @@ const CarouselBox = () => {
         <section className="text-section md:w-1/2 flex flex-col justify-center items-start space-y-4">
           <h1 className="text-4xl font-bold mb-4">Comparer les Meilleures Offres Box</h1>
           <p className="mb-4">
-            Découvrez les meilleures offres en un clin d'œil ! Chaque jour, nous comparons <strong>des centaines de forfaits</strong> mobiles, Box Internet et Énergie Gaz et Électricité pour vous dénicher celui qui vous correspond parfaitement.
+            Découvrez les meilleures offres en un clin d&apos;œil ! Chaque jour, nous comparons <strong>des centaines de forfaits</strong> mobiles, Box Internet et Énergie Gaz et Électricité pour vous dénicher celui qui vous correspond parfaitement.
           </p>
           <a href="/" className="compare-button bg-[#79CE25] text-white font-semibold py-2 px-4 rounded-lg">
             Comparer les forfaits
