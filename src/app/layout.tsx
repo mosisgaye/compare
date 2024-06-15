@@ -1,6 +1,7 @@
 import ClientProvider from '@/providers/ClientProvider';
 import { GoogleTagManager } from '@next/third-parties/google'
-
+import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/react"
 import './globals.css';
 
 // Métadonnées globales
@@ -32,10 +33,18 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
       <GoogleTagManager gtmId="GTM-XYZ" />
         <ClientProvider>
           {children}
         </ClientProvider>
+        <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );

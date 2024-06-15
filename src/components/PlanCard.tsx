@@ -22,7 +22,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
   boxImage,
 }) => {
   return (
-    <div className="p-4 bg-white dark:bg-[#012737] dark:text-white rounded shadow-md mb-4 flex flex-col space-y-4">
+    <div className="p-4 bg-white dark:bg-[#012737] dark:text-white rounded shadow-md mb-4 flex flex-col space-y-4 border border-[#79CE25]">
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center space-x-2">
           <img src={operatorLogo} alt={`${title} logo`} className="w-10 h-10 object-contain" />
@@ -32,8 +32,8 @@ const PlanCard: React.FC<PlanCardProps> = ({
       </div>
 
       <div className="flex justify-between items-center">
-     
-        <p className="text-2xl font-semibold dark:text-[white] text-black">{price}</p>
+        {/* Price with right alignment */}
+        <p className="text-2xl font-semibold dark:text-white text-black">{price}</p>
       </div>
 
       <ul className="mt-2 mb-2">

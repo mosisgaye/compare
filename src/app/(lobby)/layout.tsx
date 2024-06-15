@@ -8,7 +8,7 @@ export default async function LobbyLayout({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div className='dark:bg-[#012737]'>
       <Navbar />
       <div>{children}</div>
       <Footer />

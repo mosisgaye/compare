@@ -3,8 +3,8 @@
 import { useState } from 'react'; // Importer useState pour gérer l'état du menu
 import Link from 'next/link';
 import Image from 'next/image';
-import Themeswitch from '@/components/ui/Themeswitch';
 import '@/app/globals.css';
+import { ModeToggle } from '../Mode-toggle';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // État pour le menu mobile
@@ -46,8 +46,9 @@ const Navbar = () => {
             <li>
               <Link href="#" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogue</Link>
             </li>
-            <li>
-              <Themeswitch />
+            <li className='dark:text-white'>
+            <ModeToggle />
+              
             </li>
           </ul>
         </div>

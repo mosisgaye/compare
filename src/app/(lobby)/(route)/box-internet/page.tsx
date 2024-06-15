@@ -78,7 +78,9 @@ const Home: React.FC = () => {
   return (
 
     <>
+    <div className='flex justify-center'>
       <CarouselBox />
+      </div>
       <div className="flex justify-center">
         <div className="flex flex-col md:flex-row max-w-7xl w-full p-4">
           <div className="w-full md:w-1/4 p-4">

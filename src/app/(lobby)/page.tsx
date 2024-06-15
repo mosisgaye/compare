@@ -11,7 +11,7 @@ import Review from '@/components/Review';
 
 export default function Lobby() {
   return (
-    <main className='py-20'>
+    <main className='py-20 dark:bg-[#012737]'>
       <div>
         <Carousel />
       </div>

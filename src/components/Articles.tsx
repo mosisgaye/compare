@@ -22,7 +22,7 @@ const Articles = () => {
   );
 
   return (
-    <article className="section-how-it-works__step ph_inner_spacer p-4 md:p-8 shadow-lg rounded-lg dark:bg-[#102a43] dark:text-white">
+    <article className="section-how-it-works__step ph_inner_spacer p-4 md:p-8 shadow-lg rounded-lg dark:bg-[#012737] dark:text-white">
       <h1 className="text-xl md:text-2xl font-medium mb-4">
         Forfait Mobile Pas Cher
       </h1>
