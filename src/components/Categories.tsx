@@ -14,18 +14,18 @@ const Categories = async () => {
     >
       <div className='flex items-end justify-between'>
         <div className='flex flex-col space-y-4'>
-          <h2 className='max-w-sm text-2xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
+          <h2 className='max-w-sm text-xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
            
-            Les opérateurs télécoms  </h2>
+            Les offres Box Internet  </h2>
           <h3 className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            Trouver les meilleurs offres selon votre convenance
+            Trouver les meilleurs offres
           </h3>
         </div>
         <a
-          href='/forfait'
+          href='/box-internet'
           className='hidden md:flex gap-1 text-[#79CE25] hover:translate-x-1 hover:text-[#79CE25]  transition-all'
         >
-          Choississez <ArrowRight />
+          Allez-y <ArrowRight />
         </a>
       </div>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>

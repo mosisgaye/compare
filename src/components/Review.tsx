@@ -20,9 +20,9 @@ const Review = () => {
     <section className="py-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-semibold">A propos des clients de CompareTelecom</h2>
+          <h2 className="text-3xl font-semibold dark:text-white">A propos des clients de CompareTelecom</h2>
           <div className="flex items-center justify-center mt-4">
-            <h2 className="text-5xl font-bold">4.9</h2>
+            <h2 className="text-5xl font-bold dark:text-white">4.9</h2>
             <div className="ml-4">
               <div className="flex space-x-1 text-yellow-400">
                 <StarFilled className="w-6 h-6" />
@@ -31,7 +31,7 @@ const Review = () => {
                 <StarFilled className="w-6 h-6" />
                 <StarFilled className="w-6 h-6" />
               </div>
-              <div className="text-lg font-light">56 Votes</div>
+              <div className="text-lg font-light dark:text-white">56 Votes</div>
             </div>
           </div>
         </div>

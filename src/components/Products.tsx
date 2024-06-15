@@ -33,8 +33,8 @@ const Products = async () => {
         <PopularProducts />
       </Suspense>
       <Link
-        href='/forfait'
-        className='custom-button-color mx-auto flex w-fit hover:before:-translate-x-48'
+        href='/forfait-mobile'
+        className='custom-button-color mx-auto flex w-fit hover:before:-translate-x-48 dark:text-white'
         
       >
         Voir toutes les Offres
