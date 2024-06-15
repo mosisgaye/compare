@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link href="/forfait-mobile" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Forfait Mobile</Link>
             </li>
             <li>
-              <Link href="/box" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Box Internet</Link>
+              <Link href="/box-internet" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Box Internet</Link>
             </li>
             <li>
               <Link href="#" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Energie</Link>
