@@ -2,11 +2,8 @@ import ClientProvider from '@/providers/ClientProvider';
 import { GoogleTagManager } from '@next/third-parties/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
-
-import { Inter } from "next/font/google"
 import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] })
 
 // Métadonnées globales
 export const metadata = {
@@ -36,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`antialiased min-h-screen bg-white dark:bg-[#012737] text-slate-900 dark:text-slate-50 ${inter.className}`}>
+      <body>
       <ThemeProvider
             attribute="class"
             defaultTheme="system"
