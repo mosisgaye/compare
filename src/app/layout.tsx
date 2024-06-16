@@ -1,15 +1,19 @@
 import ClientProvider from '@/providers/ClientProvider';
-import { GoogleTagManager } from '@next/third-parties/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { ThemeProvider } from "@/components/theme-provider"
-import { Analytics } from "@vercel/analytics/react"
+import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
+import { Inter } from "next/font/google"
+import Head from 'next/head';
 import './globals.css';
 
 
-// Métadonnées globales
+const inter = Inter({ subsets: ["latin"] })
+
+
 export const metadata = {
   title: 'Comparateur des offres télécoms en France - CompareTelecom.net',
-  description: 'CompareTelecom, un site de comparateur des offres télécoms en France. Trouvez les meilleurs forfaits mobiles, internationaux et sans engagement.',
+  description: 'CompareTelecom, un site de comparateur des offres télécoms en France. Trouvez les meilleurs forfaits mobiles, box internet en France.',
   creator: 'Comparetelecom',
   publisher: 'Comparetelecom',
   openGraph: {
@@ -34,21 +38,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-      <GoogleTagManager gtmId="GTM-P8JWP6N9" />
-        <ClientProvider>
-          {children}
-        </ClientProvider>
-        <Analytics />
+      <Head>
+        {/* Assurez-vous que les métadonnées sont correctement générées ici */}
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+      </Head>
+      <body className={`${inter.className}`}>
+        <div className='w-full mx-auto'>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <GoogleTagManager gtmId="GTM-P8JWP6N9" />
+          <ClientProvider>
+            {children}
+          </ClientProvider>
+          <Analytics />
         </ThemeProvider>
+        {/* Placez GoogleAnalytics dans la balise body */}
+        <GoogleAnalytics gaId="G-DYKC89LEW0" />
+        </div>
       </body>
-      <GoogleAnalytics gaId="G-DYKC89LEW0" />
     </html>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
+
 const blogPosts = {
   "decouvrez-lg": {
     title: "Découvrez le meilleur et le plus récent de LG",
@@ -22,7 +23,7 @@ const blogPosts = {
     image: "/path/to/image2.jpg",
   },
   "histoire-oled": {
-    title: "L’histoire du téléviseur OLED",
+    title: "L&apos;histoire du téléviseur OLED",
     content: "Contenu détaillé de l'article sur les téléviseurs OLED...",
     image: "/path/to/image3.jpg",
   },
