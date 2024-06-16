@@ -32,7 +32,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`items-center justify-between ${menuOpen ? 'block' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
+        <div className={`transition-all duration-300 items-center justify-between ${menuOpen ? 'block' : 'hidden'} md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
               <Link href="/forfait-mobile" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Forfait Mobile</Link>
@@ -44,11 +44,10 @@ const Navbar = () => {
               <Link href="#" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Energie</Link>
             </li>
             <li>
-              <Link href="#" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogue</Link>
+              <Link href="/blogue" className="block py-2 px-3 hover:bg-[#79CE25] md:hover:bg-transparent md:hover:[#79CE25] md:p-0 md:dark:hover:text-[#79CE25] dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogue</Link>
             </li>
             <li className='dark:text-white'>
-            <ModeToggle />
-              
+              <ModeToggle />
             </li>
           </ul>
         </div>

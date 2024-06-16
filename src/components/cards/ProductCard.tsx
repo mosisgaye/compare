@@ -9,12 +9,12 @@ import "@/app/globals.css";
 interface ProductCardProps {
   product: Product & {
     Category: Category;
-    images: string[]; // Supposons que les images sont stockées sous forme de tableau de chaînes (URL)
+    images: string[]; 
   };
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-  // Utilisez une chaîne vide si affiliateLink est null
+
   const affiliateLink: string = product.affiliateLink ?? "#";
 
   return (
@@ -24,7 +24,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="aspect-square m-3 rounded-2xl bg-gray-10 relative w-12 h-24 sm:w-full sm:h-32">
           {product.images && product.images.length > 0 && (
             <Image
-              src={product.images[0]} // Utilisez le premier élément du tableau d'URL d'images
+              src={product.images[0]} 
               alt={product.name}
               className="aspect-square object-cover rounded-2xl"
               width={100}

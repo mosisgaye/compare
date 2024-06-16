@@ -18,19 +18,19 @@ const Cookies = () => {
   const handleAcceptCookies = () => {
     setCookieAccepted(true);
     setShowCookieConsent(false);
-    // Autre logique pour accepter les cookies
+    // Logique pour accepter les cookies
   };
 
   const handleDeclineCookies = () => {
     setCookieDeclined(true);
     setShowCookieConsent(false);
-    // Autre logique pour refuser les cookies
+    // Logique pour refuser les cookies
   };
 
   return (
     <div>
       {!cookieAccepted && !cookieDeclined && showCookieConsent && (
-        <div className="fixed bottom-0 left-0 w-full p-4 md:p-8 bg-white border-t-4 border-green-500 shadow-lg transform translate-y-full transition-transform duration-500 ease-in-out" style={{ backgroundColor: "#FFFFFF" }}>
+        <div className="fixed bottom-0 left-0 w-full p-4 md:p-8 bg-white border-t-4 border-green-500 shadow-lg transition-transform duration-500 ease-in-out" style={{ backgroundColor: "#FFFFFF" }}>
           <div className="cky-notice">
             <p className="cky-title font-bold text-lg mb-2" role="heading" aria-level={1} style={{ color: "#012737" }}>
               Nous accordons de l&apos;importance à votre vie privée
@@ -38,17 +38,17 @@ const Cookies = () => {
             <div className="cky-notice-group">
               <div className="cky-notice-des text-gray-800" style={{ color: "#012737" }}>
                 <p>
-                  Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des annonces ou du contenu personnalisé et analyser notre trafic. En cliquant sur Accepter Tout, vous consentez à notre utilisation des cookies. Politique relative aux cookies.
-                  <a href="#" className="cky-policy underline text-green-600" aria-label="Cookie Policy" onClick={handleAcceptCookies}>
+                  Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des annonces ou du contenu personnalisé et analyser notre trafic. En cliquant sur Accepter Tout, vous consentez à notre utilisation des cookies. Pour en savoir plus, consultez notre {" "}
+                  <a href="/cookie-policy" className="cky-policy underline text-green-600" aria-label="Cookie Policy" target="_blank" rel="noopener noreferrer">
                     Politique de cookie
-                  </a>
+                  </a>.
                 </p>
               </div>
               <div className="cky-notice-btn-wrapper mt-4 flex gap-2">
-                <button className="cky-btn cky-btn-customize transition ease-in-out duration-300 hover:bg-gray-300 border-2 border-green-500 text-green-500 px-4 py-2 rounded-md" aria-label="Configure" onClick={handleDeclineCookies}>
+                <button className="cky-btn cky-btn-customize transition ease-in-out duration-300 hover:bg-gray-300 border-2 border-green-500 text-green-500 px-4 py-2 rounded-md" aria-label="Decline Cookies" onClick={handleDeclineCookies}>
                   Refuser
                 </button>
-                <button className="cky-btn cky-btn-accept transition ease-in-out duration-300 hover:bg-green-600 hover:text-white border-2 border-green-500 bg-green-500 text-white px-4 py-2 rounded-md" aria-label="Accept All" onClick={handleAcceptCookies}>
+                <button className="cky-btn cky-btn-accept transition ease-in-out duration-300 hover:bg-green-600 hover:text-white border-2 border-green-500 bg-green-500 text-white px-4 py-2 rounded-md" aria-label="Accept All Cookies" onClick={handleAcceptCookies}>
                   Accepter
                 </button>
               </div>

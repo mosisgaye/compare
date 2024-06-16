@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react';
 import * as Separator from '@radix-ui/react-separator';
 import Link from "next/link";
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="item_copyright whitespace-nowrap">
           <div className="made_with italic">
             <span className="text-green-500">
-              {/* Add any additional text or icon here if needed */}
+              {/* Texte ou icône supplémentaire si nécessaire */}
             </span>
           </div>
           <h6 className="text-xs leading-4 tracking-wide mb-4"></h6>
@@ -34,13 +35,13 @@ const Footer = () => {
             <Link href="/cookies" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
               Politique de Cookie - {" "}
             </Link>
-             <Link href="/mention" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
+            <Link href="/mention" title="Page : Mentions Légales" className="text-white">
               Mention légale{" "}
             </Link>
           </div>
         </div>
         {/* Separator */}
-        <Separator.Root className="max-w-screen-2xl my-6 mx-auto" />
+        <Separator.Root className="max-w-screen-2xl my-6 mx-auto" aria-orientation="horizontal" />
         {/* Separator */}
       </div>
     </footer>
