@@ -23,7 +23,7 @@ const Products = async () => {
           </h3>
         </div>
         <a
-          href='/forfait'
+          href='/forfait-mobile'
           className='hidden md:flex gap-1 hover:translate-x-1 hover:text-emerald-600 transition-all' style={{ color: '#79CE25' }}
         >
           Choisissez <ArrowRight />
