@@ -32,6 +32,17 @@ const plans: Plan[] = [
 
   },
   {
+    title: 'Orange Just Livebox Fibre',
+    speed: '400 Mb/s',
+    price: '19,99€/mois',
+    features: ['Pas de TV'],
+    engagement: 'Engagement 12 mois',
+    tech: 'Fibre',
+    operator: 'Orange',
+    operatorLogo: '/images/bouygues.png',
+
+  },
+  {
     title: 'SFR Premium Fibre',
     speed: '8 Gb/s',
     price: '44,99€/mois',
@@ -53,6 +64,18 @@ const plans: Plan[] = [
     tech: 'Fibre',
     operator: 'Orange',
     operatorLogo: '/images/bouygues.png',
+
+  },
+  {
+    title: 'SFR Starter Fibre',
+    speed: '2 Gb/s',
+    price: '39,99€/mois',
+    features: ['160 chaines TV'],
+    engagement: 'Engagement 12 mois',
+    tech: 'Fibre',
+    operator: 'SFR',
+    tv: true,
+    operatorLogo: '/images/sfr.png',
 
   },
 ];
@@ -96,7 +119,7 @@ const Home: React.FC = () => {
                 features={plan.features}
                 promotion={plan.promotion}
                 engagement={plan.engagement}
-                operatorLogo={plan.operatorLogo} boxImage={''} />
+                operatorLogo={plan.operatorLogo} />
             ))}
           </div>
         </div>

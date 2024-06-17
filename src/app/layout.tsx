@@ -40,6 +40,12 @@ export default function RootLayout({
     <html lang="fr">
       <Head>
         {/* Assurez-vous que les métadonnées sont correctement générées ici */}
+        <title>Comparetelecom</title>
+        <link
+          rel="canonical"
+          href="https://comparetelecom.net/forfait-mobile"
+          key="canonical"
+        />
         <meta property="og:image" content="<generated>" />
         <meta property="og:image:type" content="<generated>" />
         <meta property="og:image:width" content="<generated>" />

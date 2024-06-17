@@ -40,6 +40,7 @@ const blogPosts = [
     "image": "/images/ia.png",
     "slug": "ia-securite-donnees-mobiles",
   }
+  
 
 ];
 
