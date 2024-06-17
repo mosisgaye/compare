@@ -20,7 +20,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
   operatorLogo,
 }) => {
   return (
-    <div className="p-4 dark:bg-[#052c3e] rounded-md shadow-md mb-4 flex flex-col space-y-4 border-white hover:border-[#79CE25] transition-all duration-200">
+    <div className="border border-gray-300 dark:border-white p-4 mb-4 rounded-lg dark:bg-[#052c3e] shadow-md flex flex-col space-y-4  hover:border-[#79CE25] transition-all duration-200">
       {/* Header Section */}
       <div className="flex justify-between items-center">
         <img src={operatorLogo} alt={`${title} logo`} className="w-16 h-16 object-contain" />
