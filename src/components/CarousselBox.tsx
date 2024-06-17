@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const CarouselBox = () => {
   return (
     <div className="flex justify-center py-8 bg-white dark:bg-[#012737] text-black dark:text-white">
@@ -10,9 +8,7 @@ const CarouselBox = () => {
           <p className="mb-4">
             Découvrez les meilleures offres en un clin d&apos;œil ! Chaque jour, nous comparons <strong>des centaines de forfaits</strong> mobiles, Box Internet et Énergie Gaz et Électricité pour vous dénicher celui qui vous correspond parfaitement.
           </p>
-          <a href="/" className="compare-button bg-[#79CE25] text-white font-semibold py-2 px-4 rounded-lg">
-            Comparer les forfaits
-          </a>
+         
         </section>
       </div>
     </div>

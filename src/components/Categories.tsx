@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react'
 import { Suspense } from 'react'
-
 import CategoryCard from '@/components/cards/CategoryCard'
 import CategoryCardSkeleton from '@/components/skeletons/CategoryCardSkeleton'
 import { categories } from '@/config'
@@ -14,9 +13,9 @@ const Categories = async () => {
     >
       <div className='flex items-end justify-between'>
         <div className='flex flex-col space-y-4'>
-          <h2 className='max-w-sm text-xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
+          <h1 className='max-w-sm text-xl md:text-5xl text-start text-[#79CE25] font-bold leading-[1.1]'>
            
-            Les offres Box Internet  </h2>
+            Les offres de Box Internet  </h1>
           <h3 className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
             Trouver les meilleurs offres
           </h3>

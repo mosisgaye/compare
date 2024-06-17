@@ -1,5 +1,4 @@
 'use client'
-import '@/app/globals.css'; // Assurez-vous que ce fichier inclut Tailwind CSS
 import { useState, useEffect } from 'react';
 
 const Cookies = () => {
@@ -39,7 +38,7 @@ const Cookies = () => {
               <div className="cky-notice-des text-gray-800" style={{ color: "#012737" }}>
                 <p>
                   Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des annonces ou du contenu personnalisé et analyser notre trafic. En cliquant sur Accepter Tout, vous consentez à notre utilisation des cookies. Pour en savoir plus, consultez notre {" "}
-                  <a href="/cookie-policy" className="cky-policy underline text-[#79CE25]" aria-label="Cookie Policy" target="_blank" rel="noopener noreferrer">
+                  <a href="/cookies" className="cky-policy underline text-[#79CE25]" aria-label="Cookie Policy" target="_blank" rel="noopener noreferrer">
                     Politique de cookie
                   </a>.
                 </p>

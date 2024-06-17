@@ -25,10 +25,10 @@ const Filter: React.FC<FilterProps> = ({ categories, className, ...props }) => {
     setIsOpen(false)
 
     if (categorySlug === selectedCategory) {
-      return window.location.assign('/forfait')
+      return window.location.assign('/forfait-mobile')
     }
 
-    window.location.assign(`/forfait?category=${categorySlug}`)
+    window.location.assign(`/forfait-mobile?category=${categorySlug}`)
   }
 
   return (
