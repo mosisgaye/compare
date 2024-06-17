@@ -1,3 +1,4 @@
+import React from 'react';
 import { Metadata } from 'next';
 import Filter from '@/components/Filter';
 import ProductsList from '@/components/ProductsList';
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Forfait Mobile',
     description: 'Découvrez les meilleurs forfaits mobiles disponibles. Comparez les offres et trouvez le forfait mobile qui vous convient le mieux.',
-    url: `${process.env.NEXT_PUBLIC_APP_URL}/products`,
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/forfait-mobile`,
   },
 };
 
@@ -60,11 +61,7 @@ const Products = async ({ searchParams }: { searchParams: { category: string } }
 
   return (
     <div className='max-w-7xl mx-auto px-4'>
-      <div className='text-black text-4xl pb-16  '>
-        {'  '}
-      </div>
-  
-      <div className="mt-8 sm:mt-10 mb-4 sm:mb-6"></div>
+      <h1 className='text-4xl font-bold text-center mt-8 sm:mt-10 mb-4 sm:mb-6'>Forfait Mobile</h1>
       <div className="flex justify-center mb-4 sm:mb-6">
         <Filter categories={categories} className='mt-8 sm:mt-10' />
       </div>

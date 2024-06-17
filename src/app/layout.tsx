@@ -1,3 +1,4 @@
+// Importation des modules et des styles
 import ClientProvider from '@/providers/ClientProvider';
 import { GoogleTagManager } from '@next/third-parties/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -7,10 +8,10 @@ import { Inter } from "next/font/google"
 import Head from 'next/head';
 import './globals.css';
 
-
+// Configuration de la police Inter
 const inter = Inter({ subsets: ["latin"] })
 
-
+// Définition des métadonnées statiques
 export const metadata = {
   title: 'Comparateur des offres télécoms en France - CompareTelecom.net',
   description: 'CompareTelecom, un site de comparateur des offres télécoms en France. Trouvez les meilleurs forfaits mobiles, box internet en France.',
@@ -31,6 +32,7 @@ export const metadata = {
   },
 };
 
+// Composant RootLayout
 export default function RootLayout({
   children,
 }: {
@@ -46,27 +48,35 @@ export default function RootLayout({
           href="https://comparetelecom.net/forfait-mobile"
           key="canonical"
         />
-        <meta property="og:image" content="<generated>" />
-        <meta property="og:image:type" content="<generated>" />
-        <meta property="og:image:width" content="<generated>" />
-        <meta property="og:image:height" content="<generated>" />
+        {/* Les balises meta pour Open Graph */}
+        <meta property="og:image" content="https://comparetelecom.net/images/capture.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="600" />
+        <meta name="description" content="CompareTelecom, un site de comparateur des offres télécoms en France. Trouvez les meilleurs forfaits mobiles, box internet en France." />
+        <meta name="author" content="Comparetelecom" />
+        <meta name="publisher" content="Comparetelecom" />
       </Head>
       <body className={`${inter.className}`}>
         <div className='w-full mx-auto'>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <GoogleTagManager gtmId="GTM-P8JWP6N9" />
-          <ClientProvider>
-            {children}
-          </ClientProvider>
-          <Analytics />
-        </ThemeProvider>
-        {/* Placez GoogleAnalytics dans la balise body */}
-        <GoogleAnalytics gaId="G-DYKC89LEW0" />
+          {/* ThemeProvider pour gérer le thème de l'application */}
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {/* Intégration de Google Tag Manager */}
+            <GoogleTagManager gtmId="GTM-P8JWP6N9" />
+            {/* Fournisseur de clients */}
+            <ClientProvider>
+              {children}
+            </ClientProvider>
+            {/* Analytics de Vercel */}
+            <Analytics />
+          </ThemeProvider>
+          {/* Google Analytics placé dans la balise body */}
+          <GoogleAnalytics gaId="G-DYKC89LEW0" />
         </div>
       </body>
     </html>

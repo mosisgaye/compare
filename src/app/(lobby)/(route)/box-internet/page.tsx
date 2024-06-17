@@ -101,10 +101,11 @@ const Home: React.FC = () => {
   return (
 
     <>
-    <div className='flex justify-center'>
-      <CarouselBox />
+    <div className='text-center'>
+    <h1 className="text-4xl font-bold mb-8 dark:text-white py-5">Comparer les Meilleures Offres de Box</h1>
+    <p className="text-lg mb-4 dark:text-white">Découvrez les meilleures offres en un clin d&apos;œil !</p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div className="flex flex-col md:flex-row max-w-7xl w-full p-4">
           <div className="w-full md:w-1/4 p-4">
             <FilterSidebar onFilterChange={handleFilterChange} />
