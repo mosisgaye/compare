@@ -7,6 +7,7 @@ import Cookies from '@/components/Cookies';
 import Products from '@/components/Products';
 import Review from '@/components/Review';
 
+
 export const metadata: Metadata = {
   title: 'Votre Hub de Comparaison des Offres Télécom',
   description: 'Bienvenue dans le website CompareTelecom, où vous pouvez explorer les meilleures offres télécoms, lire des critiques, et découvrir des articles informatifs.',
@@ -41,6 +42,8 @@ export default function Lobby() {
         <Cookies />
         <Review />
         <Articles />
+        
+      
       </div>
     </main>
   );

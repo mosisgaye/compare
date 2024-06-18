@@ -1,30 +1,28 @@
-const { PrismaClient } = require('@prisma/client')
-const prisma = new PrismaClient()
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 
 async function main() {
   const newCategories = [
-    { name: 'Box 100 Mb/s', slug: 'box-100mbps' },
-    { name: 'Box 500 Mb/s', slug: 'box-500mbps' },
-    { name: 'Box 2 Gb/s', slug: 'box-2gbps' },
-    { name: 'Box 8 Gb/s', slug: 'box-8gbps' },
-  ]
+    { name: 'Sans Engagement', slug: 'sans-engagement' },
+    { name: 'Les Moins Chers', slug: 'les-moins-chers' },
+    { name: 'Forfait 5G', slug: 'forfait-5g' },
+    { name: 'Opérateurs', slug: 'operateurs' },
+  ];
 
   for (const category of newCategories) {
     await prisma.category.create({
       data: category,
-    })
+    });
   }
 
-  console.log('Nouvelles catégories ajoutées avec succès !')
+  console.log('Nouvelles catégories ajoutées avec succès !');
 }
 
-
 main()
-  .catch(e => {
-    console.error(e)
-    process.exit(1)
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
   })
   .finally(async () => {
-    await prisma.$disconnect()
-  })
-
+    await prisma.$disconnect();
+  });

@@ -1,9 +1,17 @@
+// pages/products.tsx (ou pages/forfait-mobile.tsx selon votre structure)
 import React from 'react';
 import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import Filter from '@/components/Filter';
 import ProductsList from '@/components/ProductsList';
 import { INFINITE_SCROLL_LIMIT, categories } from '@/config';
 import prisma from '@/lib/db';
+import { FaApple, FaDollarSign, FaFeather, FaGlobe } from 'react-icons/fa';
+import Button from '@/components/Button';
+import { Bird } from 'lucide-react';
+
+// Dynamically import the ZendeskWidget to ensure it runs only on the client
+const ZendeskWidget = dynamic(() => import('@/components/ZendeskWidget'), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'Forfait Mobile',
@@ -62,10 +70,14 @@ const Products = async ({ searchParams }: { searchParams: { category: string } }
   return (
     <div className='max-w-7xl mx-auto px-4'>
       <h1 className='text-4xl font-bold text-center mt-8 sm:mt-10 mb-4 sm:mb-6'>Forfait Mobile</h1>
-      <div className="flex justify-center mb-4 sm:mb-6">
-        <Filter categories={categories} className='mt-8 sm:mt-10' />
+      <div className="flex justify-center mb-4 sm:mb-6 space-x-3">
+        <Button icon={<Bird />} label="Sans engagement" />
+        <Button icon={<FaDollarSign />} label="Les moins chers" />
+        <Button icon={<FaApple />} label="Forfait 5G" />
+        <Button icon={<FaGlobe />} label="Opérateurs" />
       </div>
       <ProductsList initialProducts={products} totalData={totalProducts} />
+      <ZendeskWidget /> {/* Ajoutez le widget ici */}
     </div>
   );
 };

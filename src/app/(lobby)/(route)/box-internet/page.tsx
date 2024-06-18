@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import FilterSidebar from '@/components/FilterSidebar';
 import PlanCard from '@/components/PlanCard';
 import { Plan } from '@/types';
+import ZendeskWidget from '@/components/ZendeskWidget';
 
 const plans: Plan[] = [
   {
@@ -122,6 +123,7 @@ const Home: React.FC = () => {
                 operatorLogo={plan.operatorLogo} />
             ))}
           </div>
+          <ZendeskWidget />
         </div>
       </div>
   

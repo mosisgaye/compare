@@ -6,13 +6,14 @@ export const INFINITE_SCROLL_LIMIT = 8
 
 export const ORDER_INFINITE_SCROLL_LIMIT = 3
 
+
 export const categories: Category[] = [
   {
     name: 'Orange',
     slug: 'orange',
   },
   {
-    name: 'Sfr',
+    name: 'SFR',
     slug: 'sfr',
   },
   {
@@ -28,7 +29,7 @@ export const categories: Category[] = [
     slug: 'lebara',
   },
   {
-    name: 'La poste Mobile',
+    name: 'La Poste Mobile',
     slug: 'poste',
   },
   {
@@ -39,6 +40,9 @@ export const categories: Category[] = [
     name: 'You',
     slug: 'you',
   },
+  
+];
+
   // Nouvelles catégories pour les offres box basées sur les débits
   //{
   //  name: 'Box 100 Mb/s',
@@ -56,4 +60,4 @@ export const categories: Category[] = [
   //  name: 'Box 8 Gb/s',
   //  slug: 'box-8gbps',
   //},
-]//
+
