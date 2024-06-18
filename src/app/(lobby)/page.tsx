@@ -1,4 +1,7 @@
+// pages/lobby.tsx (ou la page correspondante selon votre structure)
+import React from 'react';
 import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import Alerte from '@/components/Alerte';
 import Carousel from '@/components/Carousel';
 import Articles from '@/components/Articles';
@@ -7,6 +10,8 @@ import Cookies from '@/components/Cookies';
 import Products from '@/components/Products';
 import Review from '@/components/Review';
 
+// Dynamically import the ZendeskWidget to ensure it runs only on the client
+const ZendeskWidget = dynamic(() => import('@/components/ZendeskWidget'), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'Votre Hub de Comparaison des Offres Télécom',
@@ -29,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 // Composant de la page Lobby
-export default function Lobby() {
+const Lobby: React.FC = () => {
   return (
     <main className='py-20 dark:bg-[#012737]'>
       <div>
@@ -42,9 +47,10 @@ export default function Lobby() {
         <Cookies />
         <Review />
         <Articles />
-        
-      
+        <ZendeskWidget /> {/* Ajoutez le widget ici */}
       </div>
     </main>
   );
 }
+
+export default Lobby;

@@ -102,32 +102,33 @@ const Home: React.FC = () => {
 
     <>
     <div className='text-center'>
-    <h1 className="text-4xl font-bold mb-8 dark:text-white py-5">Comparer les Meilleures Offres de Box</h1>
-    <p className="text-lg mb-4 dark:text-white">Découvrez les meilleures offres en un clin d&apos;œil !</p>
+      <h1 className="text-4xl font-bold mb-8 dark:text-white py-5">Comparer les Meilleures Offres de Box</h1>
+      <p className="text-lg mb-4 dark:text-white">Découvrez les meilleures offres en un clin d'œil !</p>
+    </div>
+    <div className="flex flex-col md:flex-row justify-center dark:border-r-2 dark:border-white max-w-7xl mx-auto p-4">
+      <div className="w-full md:w-1/4 p-4">
+        <FilterSidebar onFilterChange={handleFilterChange} />
       </div>
-      <div className="flex justify-center dark:border-r-2 dark:border-white">
-        <div className="flex flex-col md:flex-row max-w-7xl w-full p-4">
-          <div className="w-full md:w-1/4 p-4">
-            <FilterSidebar onFilterChange={handleFilterChange} />
-          </div>
-          <div className="w-full md:w-3/4 p-4">
-            {filteredPlans.map((plan, index) => (
-              <PlanCard
-                key={index}
-                title={plan.title}
-                speed={plan.speed}
-                price={plan.price}
-                features={plan.features}
-                promotion={plan.promotion}
-                engagement={plan.engagement}
-                operatorLogo={plan.operatorLogo} />
-            ))}
-          </div>
-          <ZendeskWidget />
-        </div>
+      <div className="w-full md:w-3/4 p-4">
+        {filteredPlans.map((plan, index) => (
+          <PlanCard
+            key={index}
+            title={plan.title}
+            speed={plan.speed}
+            price={plan.price}
+            features={plan.features}
+            promotion={plan.promotion}
+            engagement={plan.engagement}
+            operatorLogo={plan.operatorLogo}
+          />
+        ))}
       </div>
+    </div>
+    <div className="p-4">
+      <ZendeskWidget />
+    </div>
+  </>
   
-    </>
   );
 };
 
