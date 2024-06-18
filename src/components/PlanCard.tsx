@@ -28,8 +28,8 @@ const PlanCard: React.FC<PlanCardProps> = ({
           src={operatorLogo} 
           alt={`${title} logo`} 
           className="object-contain"
-          width={16}
-          height={16} />
+          width={64}
+          height={64} />
         
         <div className="flex flex-col items-center text-black dark:text-white">
           <p className="text-xl">{speed}</p>
