@@ -1,6 +1,4 @@
-// components/FilterSidebar.tsx
-'use client';
-
+'use client'
 import React, { useState, useEffect } from 'react';
 import { FiRefreshCw } from 'react-icons/fi';  // Icône de rafraîchissement pour le bouton de réinitialisation
 import { FaWifi, FaTv, FaMobileAlt } from 'react-icons/fa'; // Icônes pour les options
@@ -18,8 +16,18 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
   const [operators, setOperators] = useState<string[]>([]);
 
   useEffect(() => {
+    const handleFilterChange = () => {
+      onFilterChange({
+        techno,
+        maxBudget,
+        engagement,
+        mobile,
+        tv,
+        operators,
+      });
+    };
     handleFilterChange();
-  }, [techno, maxBudget, engagement, mobile, tv, operators]);
+  }, [techno, maxBudget, engagement, mobile, tv, operators, onFilterChange]);
 
   const handleTechnoChange = (tech: string) => {
     setTechno(prev =>
@@ -33,17 +41,6 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
         ? prev.filter(o => o !== operator)
         : [...prev, operator]
     );
-  };
-
-  const handleFilterChange = () => {
-    onFilterChange({
-      techno,
-      maxBudget,
-      engagement,
-      mobile,
-      tv,
-      operators,
-    });
   };
 
   return (
@@ -158,4 +155,3 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
 };
 
 export default FilterSidebar;
-

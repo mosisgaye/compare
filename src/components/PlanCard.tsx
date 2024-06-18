@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface PlanCardProps {
   title: string;
@@ -23,7 +24,12 @@ const PlanCard: React.FC<PlanCardProps> = ({
     <div className="border border-gray-300 dark:border-white p-4 mb-4 rounded-lg dark:bg-[#052c3e] shadow-md flex flex-col space-y-4  hover:border-[#79CE25] transition-all duration-200">
       {/* Header Section */}
       <div className="flex justify-between items-center">
-        <img src={operatorLogo} alt={`${title} logo`} className="w-16 h-16 object-contain" />
+        <Image 
+          src={operatorLogo} 
+          alt={`${title} logo`} 
+          className="object-contain"
+          width={16}
+          height={16} />
         
         <div className="flex flex-col items-center text-black dark:text-white">
           <p className="text-xl">{speed}</p>
