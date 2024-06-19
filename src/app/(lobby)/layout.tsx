@@ -11,6 +11,7 @@ export default async function LobbyLayout({
     <div className='dark:bg-[#012737]'>
       <Navbar />
       <div>{children}</div>
+     
       <Footer />
     </div>
    

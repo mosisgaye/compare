@@ -1,4 +1,3 @@
-// pages/products.tsx (ou pages/forfait-mobile.tsx selon votre structure)
 import React from 'react';
 import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
@@ -9,8 +8,8 @@ import prisma from '@/lib/db';
 import { FaApple, FaDollarSign, FaFeather, FaGlobe } from 'react-icons/fa';
 import Button from '@/components/Button';
 import { Bird } from 'lucide-react';
+import Feedback from '@/components/Feedback';
 
-// Dynamically import the ZendeskWidget to ensure it runs only on the client
 const ZendeskWidget = dynamic(() => import('@/components/ZendeskWidget'), { ssr: false });
 
 export const metadata: Metadata = {
@@ -77,7 +76,8 @@ const Products = async ({ searchParams }: { searchParams: { category: string } }
         <Button icon={<FaGlobe />} label="Opérateurs" />
       </div>
       <ProductsList initialProducts={products} totalData={totalProducts} />
-      <ZendeskWidget /> {/* Ajoutez le widget ici */}
+      <ZendeskWidget />
+      <Feedback />
     </div>
   );
 };

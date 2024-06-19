@@ -11,7 +11,6 @@ import './globals.css';
 // Configuration de la police Inter
 const inter = Inter({ subsets: ["latin"] })
 
-// Définition des métadonnées statiques
 export const metadata = {
   title: 'Comparateur des offres télécoms en France - CompareTelecom.net',
   description: 'CompareTelecom, un site de comparateur des offres télécoms en France. Trouvez les meilleurs forfaits mobiles, box internet en France.',
@@ -41,14 +40,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <Head>
-        {/* Assurez-vous que les métadonnées sont correctement générées ici */}
         <title>Comparetelecom</title>
         <link
           rel="canonical"
           href="https://comparetelecom.net/forfait-mobile"
           key="canonical"
         />
-        {/* Les balises meta pour Open Graph */}
         <meta property="og:image" content="https://comparetelecom.net/images/capture.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="800" />
@@ -59,23 +56,18 @@ export default function RootLayout({
       </Head>
       <body className={`${inter.className}`}>
         <div className='w-full mx-auto'>
-          {/* ThemeProvider pour gérer le thème de l'application */}
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            {/* Intégration de Google Tag Manager */}
             <GoogleTagManager gtmId="GTM-P8JWP6N9" />
-            {/* Fournisseur de clients */}
             <ClientProvider>
               {children}
             </ClientProvider>
-            {/* Analytics de Vercel */}
             <Analytics />
           </ThemeProvider>
-          {/* Google Analytics placé dans la balise body */}
           <GoogleAnalytics gaId="G-DYKC89LEW0" />
         </div>
       </body>
