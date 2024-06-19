@@ -44,8 +44,7 @@ const Lobby: React.FC = () => {
         <Cookies />
         <Review />
         <Articles />
-        
-        <Feedback /> 
+       <Feedback /> 
      
       </div>
     </main>

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import FilterSidebar from '@/components/FilterSidebar';
 import PlanCard from '@/components/PlanCard';
 import { Plan } from '@/types';
-import ZendeskWidget from '@/components/ZendeskWidget';
 import Feedback from '@/components/Feedback';
 
 const plans: Plan[] = [
@@ -126,7 +125,7 @@ const Home: React.FC = () => {
       </div>
     </div>
     <div className="p-4">
-      <ZendeskWidget />
+     
       <Feedback />
     </div>
   </>

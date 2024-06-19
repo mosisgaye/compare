@@ -10,7 +10,6 @@ import Button from '@/components/Button';
 import { Bird } from 'lucide-react';
 import Feedback from '@/components/Feedback';
 
-const ZendeskWidget = dynamic(() => import('@/components/ZendeskWidget'), { ssr: false });
 
 export const metadata: Metadata = {
   title: 'Forfait Mobile',
@@ -76,7 +75,6 @@ const Products = async ({ searchParams }: { searchParams: { category: string } }
         <Button icon={<FaGlobe />} label="Opérateurs" />
       </div>
       <ProductsList initialProducts={products} totalData={totalProducts} />
-      <ZendeskWidget />
       <Feedback />
     </div>
   );
