@@ -26,7 +26,7 @@ const Navbar = () => {
             className="hidden md:block text-white font-semibold bg-[#79CE25] hover:bg-[#79CE25] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center dark:bg-[#79CE25] dark:hover:bg-[#79CE25] dark:focus:ring-blue-800"
             onClick={openPopup}
           >
-            Besoin d'aide
+            Besoin d&apos;aide
           </button>
           <button 
             type="button" 
