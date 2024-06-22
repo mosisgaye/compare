@@ -1,12 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Banner from '@/components/Banner';
 
 // Définition des métadonnées de la page
 export const metadata: Metadata = {
-  title: 'Fournisseurs d\'Énergie | ComparaTelecom',
-  description: 'Découvrez la liste complète des fournisseurs d\'électricité et de gaz actifs avec leurs coordonnées et leurs sites web.'
+  title: 'Fournisseurs d&apos;Énergie | ComparaTelecom',
+  description: 'Découvrez la liste complète des fournisseurs d&apos;électricité et de gaz actifs avec leurs coordonnées et leurs sites web.'
 };
 
 const EnergySuppliers: React.FC = () => {
@@ -68,7 +67,7 @@ const EnergySuppliers: React.FC = () => {
       link: 'https://souscription.enercoop.fr/'
     },
     {
-      name: 'Energie d\'ici',
+      name: 'Energie d&apos;ici',
       logo: '/images/energie-d-ici.png',
       contact: '+33564270488',
       contactLink: 'tel:+33564270488',
@@ -178,7 +177,7 @@ const EnergySuppliers: React.FC = () => {
     <div className="flex justify-center py-8">
       <table className="w-full md:w-2/4 p-4 mx-auto divide-y divide-gray-200">
      
-        <caption className="text-2xl font-semibold mb-6 dark:text-white">⚡ Liste de tous les fournisseurs d'électricité et gaz actifs au 21/06/2024</caption>
+        <caption className="text-2xl font-semibold mb-6 dark:text-white">⚡ Liste de tous les fournisseurs d&apos;électricité et gaz actifs au 21/06/2024</caption>
         <tbody>
           {suppliers.map((supplier, index) => (
             <React.Fragment key={index}>
