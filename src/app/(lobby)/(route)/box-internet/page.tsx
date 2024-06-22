@@ -1,3 +1,4 @@
+'use client'
 import { Metadata } from 'next';
 import React, { useState } from 'react';
 import FilterSidebar from '@/components/FilterSidebar';
