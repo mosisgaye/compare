@@ -177,7 +177,7 @@ const EnergySuppliers: React.FC = () => {
   return (
     <div className="flex justify-center py-8">
       <table className="w-full md:w-2/4 p-4 mx-auto divide-y divide-gray-200">
-        <Banner />
+     
         <caption className="text-2xl font-semibold mb-6 dark:text-white">⚡ Liste de tous les fournisseurs d'électricité et gaz actifs au 21/06/2024</caption>
         <tbody>
           {suppliers.map((supplier, index) => (
