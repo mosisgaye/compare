@@ -1,10 +1,11 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 import "@/app/globals.css";
 
 // Définition des métadonnées de la page
 export const metadata: Metadata = {
-  title: 'Conditions Générales | Comparetelecom',
-  description: 'Découvrez les conditions générales d\'utilisation de notre site, y compris les informations sur les cookies et leur gestion.'
+  title: "Conditions Générales | Comparetelecom",
+  description:
+    "Découvrez les conditions générales d'utilisation de notre site, y compris les informations sur les cookies et leur gestion.",
 };
 
 const Condition = () => {
@@ -17,7 +18,11 @@ const Condition = () => {
           Conditions Générales
         </h1>
         <p className="paragraph2 dark:text-white">
-          Notre site utilise des cookies pour améliorer votre expérience utilisateur et vous fournir un contenu personnalisé. En continuant à naviguer sur ce site, vous consentez à l'utilisation de cookies. Pour plus d'informations sur l'utilisation des cookies et sur la manière de les gérer, veuillez consulter notre politique de cookies.
+          Notre site utilise des cookies pour améliorer votre expérience
+          utilisateur et vous fournir un contenu personnalisé. En continuant à
+          naviguer sur ce site, vous consentez à l&apos;utilisation de cookies.
+          Pour plus d&apos;informations sur l&apos;utilisation des cookies et sur la
+          manière de les gérer, veuillez consulter notre politique de cookies.
         </p>
       </article>
     </div>

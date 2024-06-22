@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Banner from '@/components/Banner';
 
 // Définition des métadonnées de la page
@@ -195,7 +196,7 @@ const EnergySuppliers: React.FC = () => {
                 </th>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <a href={supplier.link} target="_blank" rel="noopener noreferrer">
-                    <img src={supplier.logo} alt={`Logo ${supplier.name}`} className="h-8 w-auto" loading="lazy" />
+                    <Image src={supplier.logo} alt={`Logo ${supplier.name}`} width={32} height={32} loading="lazy" />
                   </a>
                 </td>
               </tr>
