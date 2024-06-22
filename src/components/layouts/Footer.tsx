@@ -26,16 +26,16 @@ const Footer = () => {
               Comparetelecom
             </Link>{" "}
             2024. Tous droits réservés -{" "}
-            <Link href="/condition" title="Page : Conditions Générales de Service" className="text-white">
+            <Link href="/condition-generale" title="Page : Conditions Générales de Service" className="text-white">
               Conditions Générales -{" "}
             </Link>{" "}
-            <Link href="/policy" title="Page : Votre Vie Privée Compte. Notre Politique de Confidentialité" className="text-white">
+            <Link href="/politique" title="Page : Votre Vie Privée Compte. Notre Politique de Confidentialité" className="text-white">
               Politique de Confidentialité -{" "}
             </Link>{" "}
             <Link href="/cookies" title="Page : Votre Vie Privée Compte. Notre Politique de Cookie" className="text-white">
               Politique de Cookie - {" "}
             </Link>
-            <Link href="/mention" title="Page : Mentions Légales" className="text-white">
+            <Link href="/mentions-legales" title="Page : Mentions Légales" className="text-white">
               Mention légale{" "}
             </Link>
           </div>

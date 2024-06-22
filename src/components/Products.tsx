@@ -1,3 +1,5 @@
+//src/components/Products.tsx
+
 
 import { ArrowRight, ArrowRightIcon, MoveRight } from 'lucide-react'
 import Link from 'next/link'

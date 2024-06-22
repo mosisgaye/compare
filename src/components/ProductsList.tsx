@@ -1,5 +1,5 @@
+// src/components/ProductsList.tsx
 'use client'
-
 import { useIntersection } from '@mantine/hooks'
 import { Product } from '@prisma/client'
 import { useInfiniteQuery } from '@tanstack/react-query'
@@ -29,13 +29,14 @@ const ProductsList: React.FC<ProductsListProps> = ({
 
   const searchParams = useSearchParams()
   const category = searchParams.get('category')
+  const filter = searchParams.get('filter') // Ajouter le filtre
 
   const { data, fetchNextPage, isFetchingNextPage, refetch } = useInfiniteQuery(
     {
       queryKey: ['infinite-query'],
       queryFn: async ({ pageParam }) => {
         const { data } = await axios.get(
-          `/api/products?limit=${INFINITE_SCROLL_LIMIT}&page=${pageParam}&category=${category}`,
+          `/api/products?limit=${INFINITE_SCROLL_LIMIT}&page=${pageParam}&category=${category}&filter=${filter}`, // Ajouter le filtre à la requête
         )
         return data
       },
@@ -55,7 +56,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
 
   useEffect(() => {
     refetch()
-  }, [category, refetch])
+  }, [category, filter, refetch]) // Ajouter le filtre à la liste des dépendances
 
   const products = data?.pages.flatMap((page) => page) ?? initialProducts
 

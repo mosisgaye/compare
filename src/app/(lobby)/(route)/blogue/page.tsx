@@ -1,26 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Guide D\'achats et Conseils',
-  description: 'Conseils pratiques, guides détaillés et une expertise approfondie à votre disposition.',
-  keywords: 'guide d\'achats, conseils, télécommunications, forfaits mobiles, 5G, fibre optique, eSIM, sécurité des données',
-  openGraph: {
-    title: 'Guide D\'achats et Conseils',
-    description: 'Conseils pratiques, guides détaillés et une expertise approfondie à votre disposition.',
-    url: `${process.env.NEXT_PUBLIC_APP_URL}/blogue`,
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_APP_URL}/images/Banner-01.png`,
-        width: 800,
-        height: 600,
-        alt: 'Guide D\'achats et Conseils',
-      },
-    ],
-  },
-};
 
 const blogPosts = [
   {
