@@ -1,5 +1,4 @@
 'use client'
-import { Metadata } from 'next';
 import React, { useState } from 'react';
 import FilterSidebar from '@/components/FilterSidebar';
 import PlanCard from '@/components/PlanCard';
@@ -7,11 +6,7 @@ import Feedback from '@/components/Feedback';
 import "@/app/globals.css";
 import { Plan } from '@/types';
 
-// Définition des métadonnées de la page
-export const metadata: Metadata = {
-  title: 'Comparer les Meilleures Offres de Box Internet en France | VotreSite',
-  description: 'Trouvez et comparez les meilleures offres de box Internet en France. Découvrez des plans avec fibre optique, TV incluse et sans engagement des opérateurs comme SFR, Orange, et plus.'
-};
+
 
 const plans: Plan[] = [
   {
